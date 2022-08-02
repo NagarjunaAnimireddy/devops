@@ -1,2 +1,2 @@
-println("This is TEST java program")
-println("Hello World")
+system.out.println("This is TEST java program")
+system.out.println("Hello World")
