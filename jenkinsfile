@@ -1,10 +1,13 @@
+// Declarative //
 pipeline {
-    agent any
-    stages {
-        stage('Example') {
-            steps {
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-            }
-        }
-    }
+agent { dockerfile true }
+stages {
+stage('Test') {
+steps {
+sh 'node --version'
+sh 'svn --version'
 }
+}
+}
+}
+// Script //
